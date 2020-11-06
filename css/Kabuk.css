@@ -70,8 +70,8 @@ a {
 }
 
 a:hover {
-    color: rgba(23, 23, 23, .3);
-    border-bottom: rgba(23, 23, 23, .3) 1px solid;
+    color: rgba(0, 0, 0);
+    border-bottom: rgba(0,0,0) 1px solid;
 }
 
 .marque {
@@ -133,7 +133,11 @@ img {
     border: 1px solid rgb(7, 121, 113);
     border-radius: 20px;
     transition: .5s;
+    
 }
+
+
+.btn:focus {outline:0 !important;}
 
 .btn:hover {
     background: rgb(7, 121, 113);
