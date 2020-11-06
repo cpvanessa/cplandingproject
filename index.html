@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+    <title>Kabuk Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Kabuk.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="header-img" src="images/logokabuk.png" alt="Logo Kabuk" />
+
+        <nav class="nav-bar">
+            <ul class="menu">
+                <li><a class="nav-link" href="#sacs">Sacs</a></li>
+                <li><a class="nav-link" href="#sacs-picnic">Sacs pique-nique</a></li>
+                <li><a class="nav-link" href="#porte-feuilles">Porte-feuilles</a></li>
+                <li><a class="nav-link" href="#porte-monnaies">Porte-monnaies</a></li>
+                <li>
+                    <a class="nav-link" href="#grande-porte-monnaies">Grande porte-monnaies</a>
+                </li>
+                <li><a class="nav-link" href="#range-cartes">Range-cartes</a></li>
+                <li>
+                    <a class="nav-link" href="#commander">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="marque">
+            <h1>Kabuk</h1>
+
+
+            <p>Produits artisanaux de Chercolina</p>
+        </section>
+
+        <section class="presentation">
+            <h2 style="display:none">Video Presentacion</h2>
+            <iframe class="video" height="315" src="https://res.cloudinary.com/da4vdcso2/video/upload/v1600176142/proyecto/kabuk_7XKY1Jqy.compressed_wm27pk.mp4" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!--    tino  - !!! y AQUÍ CAMBIÉ EL  <div class="products">  por una lista utilizando la misma clase y todo -->
+
+        <section class="pricing">
+            <ul id="productos">
+                <li class="products">
+                    <h2 id="sacs">Sacs</h2>
+                    <h3>€</h3>
+                    <img class="photoexemples" src="https://res.cloudinary.com/da4vdcso2/image/upload/v1599987262/proyecto/WhatsApp_Image_2020-09-12_at_20.43.20_zxacfy.jpg" alt="sac" />
+                    <br />
+                    <button class="btn">Voir</button>
+                </li>
+
+                <li class="products">
+                    <h2 id="sacs-picnic">Sacs pique-nique</h2>
+                    <h3>€</h3>
+                    <img class="photoexemples" src="https://res.cloudinary.com/da4vdcso2/image/upload/v1599987229/proyecto/WhatsApp_Image_2020-09-12_at_20.46.53_dtimds.jpg" alt="sac" /><br />
+                    <button class="btn">Voir</button>
+                </li>
+
+                <li class="products">
+                    <h2 id="porte-feuilles">Porte-feuilles</h2>
+                    <h3>€</h3>
+                    <img class="photoexemples" src="https://res.cloudinary.com/da4vdcso2/image/upload/v1599987228/proyecto/WhatsApp_Image_2020-09-12_at_20.46.53_7_smpeuh.jpg" alt="porte-feuilles" />
+                    <br />
+                    <button class="btn">Voir plus</button>
+                </li>
+                <li class="products">
+                    <h2 id="porte-monnaies">Porte-monnaies</h2>
+                    <h3>€</h3>
+                    <img class="photoexemples" src="https://res.cloudinary.com/da4vdcso2/image/upload/v1599987228/proyecto/WhatsApp_Image_2020-09-12_at_20.46.53_4_zamypd.jpg" alt="porte-monnaies" /><br />
+                    <button class="btn">Voir</button>
+                </li>
+                <li class="products">
+                    <h2 id="grande-porte-monnaies">Grandes porte-monnaies</h2>
+                    <h3>€</h3>
+                    <img class="photoexemples" src="https://res.cloudinary.com/da4vdcso2/image/upload/v1599987229/proyecto/WhatsApp_Image_2020-09-12_at_20.46.53_3_botfvt.jpg" alt="grane-porte-monnaies" /><br />
+                    <button class="btn">Voir</button>
+                </li>
+                <li class="products">
+                    <h2 id="range-cartes">Range-cartes</h2>
+                    <h3>€</h3>
+                    <img class="photoexemples" src="https://res.cloudinary.com/da4vdcso2/image/upload/v1599987229/proyecto/WhatsApp_Image_2020-09-12_at_20.46.53_5_chqbg9.jpg" alt="range-cartes" /><br />
+                    <button class="btn">Voir</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-form">
+            <h3 id="commander">Contactez-nous pour commander</h3>
+            <form class="form" action="contact.php" method="POST">
+                <input name="email" id="email" type="email" placeholder="Votre email" required />
+                <br />
+                <br />
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Votre message...">
+Votre message...</textarea
+        >
+        <br /><br />
+        <input class="submit" type="submit" value="Envoyer" class="btn" />
+      </form>
+    </section>
+</main>
+  </body>
+</html>
