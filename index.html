@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Kabuk.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -36,24 +38,20 @@
     <main>
         <section class="marque">
             <h1>Kabuk</h1>
-
-
             <p>Produits artisanaux de Chercolina</p>
+            
+            <img class="diaporama" src="" alt=""> 
+        
+            
         </section>
-
-        <section class="presentation">
-            <h2 style="display:none">Video Presentacion</h2>
-            <iframe class="video" height="315" src="https://res.cloudinary.com/da4vdcso2/video/upload/v1600176142/proyecto/kabuk_7XKY1Jqy.compressed_wm27pk.mp4" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <!--    tino  - !!! y AQUÍ CAMBIÉ EL  <div class="products">  por una lista utilizando la misma clase y todo -->
+        
 
         <section class="pricing">
             <ul id="productos">
                 <li class="products">
                     <h2 id="sacs">Sacs</h2>
                     <h3>€</h3>
-                    <img class="photoexemples" src="https://res.cloudinary.com/da4vdcso2/image/upload/v1599987262/proyecto/WhatsApp_Image_2020-09-12_at_20.43.20_zxacfy.jpg" alt="sac" />
+                    <img class="photoexemples" src="images/general.jpeg" alt="sac" />
                     <br />
                     <button class="btn">Voir plus</button>
                 </li>
@@ -92,19 +90,71 @@
                 </li>
             </ul>
         </section>
-
+        <!-- <div id="commander"></div> -->
         <section class="section-form">
-            <h3 id="commander">Contactez-nous pour commander</h3>
+            <h3 id="commander" >Contactez-nous pour commander</h3>
             <form class="form" action="contact.php" method="POST">
+                <div>
                 <input name="email" id="email" type="email" placeholder="Votre email" required />
-                <br/>
-                <br/>
-                <textarea id="comments" class="input-textarea" name="comment" placeholder="Votre message...">Votre message...</textarea
-        >
-        <br /><br />
-        <input class="submit" type="submit" value="Envoyer"/>
+            </div>
+            <div>
+                <input type ="text" id="comments" class="input-textarea" name="comment" placeholder="Votre message..."></input >
+            </div>
+            <div>
+                <input class="submit" type="submit" value="Envoyer"/>
+            </div>
       </form>
     </section>
 </main>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+    $('.products').css("border", "1px solid rgb(148, 144, 144)")
+    .css("border-radius", "3px");
+
+// $('.slide img').slice(0).hide();
+//     setInterval(function(){
+//       $('.slide > :first-child').fadeOut(1000).next('img').fadeIn(1000).end().appendTo('.slide');
+//       },3000);
+
+    let diapositives = [
+        "images/general.jpeg",
+        "images/saccare.jpg",
+        "images/sacrouge.jpeg",
+
+    ];
+    let i = 0;
+    $('.diaporama')
+        .css("width", "600px")
+        .css("height", "450px")
+        .css("border", "1px solid grey")
+
+           
+      
+        
+    $('.marque')
+        .css("display", "block")
+        .css("margin", "0 23%")
+       
+   
+                
+    function diapositiveSuivante(){
+        i++; 
+        if ( i > diapositives.length -1){
+            i= 0;
+        }
+                         
+        $('.diaporama').attr("src", diapositives[i]);
+        setTimeout (diapositiveSuivante, 3000);
+          
+    }
+
+    diapositiveSuivante();
+    
+</script>
   </body>
 </html>

@@ -2,31 +2,48 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 main {
     padding: 0 100px;
-    background: white;
+    /* background: rgb(7, 121, 113, .2); */
+    height:3000px;
+    
+   
+    
 }
 
-h1,
-p {
-    font-family: 'Oswald', sans-serif;
+
+h1{
+    text-transform:uppercase;
 }
 
-h2 {
-    font-family: 'EB Garamond', serif;
+h1, p{
+    font-family: 'Nunito sans', 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    
+    
+
+   
 }
+
+
+
 
 header {
     width: 100%;
     background-color: rgb(7, 121, 113);
     position: fixed;
-    min-height: 75px;
-    padding: 0px 0px;
+    
     display: flex;
     align-items: center;
     box-sizing: border-box;
+   
     /* border-bottom: 1px rgba(23, 23, 23, .3) solid; */
 }
 
@@ -42,24 +59,22 @@ header {
 ul {
     list-style: none;
     text-align: right;
+   padding-right:90px;
 }
 
-.menu {
-    padding-right: 200px;
-}
 
-.menu>li {
+
+.menu > li {
     float: left;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 0px;
-    border-bottom: rgba(23, 23, 23, .3);
+    
     font-family: 'Oswald', sans-serif;
     list-style: none;
 }
 
 .menu li:last-child {
-    float: right;
-    padding-left: 150px;
+    margin-left:200px;
 }
 
 a {
@@ -71,57 +86,75 @@ a {
 
 a:hover {
     color: rgba(0, 0, 0);
-    border-bottom: rgba(0,0,0) 1px solid;
+    /* border-bottom: rgba(0,0,0) 1px solid; */
 }
 
 .marque {
-    padding-top: 150px;
-    padding-left: 120px;
-    padding-bottom: 50px;
-    padding-right: auto;
-    font-family: Century gothic;
-}
+padding-top: 150px;
+padding-bottom: 50px;  
+font-family: 'Nunito sans', 'Century gothic';
+/* background: url(/images/general.jpeg) 0 0 no-repeat;
 
-.video {
-    display: block;
-    margin: auto auto;
-    padding-bottom: 40px;
-    max-width: 480px;
-    width: 100%;
+     */
+    
+};
+
+*/
+
+
+
+img{
+    width:1150px;
+
+
 }
 
 .pricing {
     padding: 50px;
-    margin-left: auto;
+    margin-left: 55px;
+  
 }
 
 #productos {
     display: flex;
     flex-flow: wrap;
+
+   
 }
 
 .products {
+    box-sizing: border-box;
     list-style: none;
-    /* border: 1px solid #000; */
-    border-radius: 20px;
+   
+   
     text-align: center;
-    margin: 10px;
+    margin: 15px;
     /*entre las cajas*/
-    margin-bottom: 10px;
-    padding-bottom: 80px;
-    padding-top: 20px;
-    min-width: 30%;
+  
+    padding-bottom:40px;
+    padding-top: 40px;
+    
+    width: 30%;
 }
 
-.products h2,
-h3,
-img {
+
+h2,
+h3 {
     margin: 10px;
+    font-family: 'Nunito sans';
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color:rgb(70, 69, 69);
+    font-weight: 600px;
+    letter-spacing: 3px;
+    
+  
 }
 
 .photoexemples {
-    max-width: 100px;
-    height: 140px;
+    box-sizing: border-box;
+    max-width: 400px;
+    height: 150px;
 }
 
 .btn {
@@ -129,7 +162,7 @@ img {
     height: 40px;
     /* text-transform: uppercase; */
     cursor: pointer;
-    color: rgb(7, 121, 113);
+    /* color: rgb(7, 121, 113); */
     border: 1px solid rgb(7, 121, 113);
     border-radius: 20px;
     transition: .5s;
@@ -144,10 +177,20 @@ img {
     border: none;
     color: white;
 }
-
+/* #commander{
+    margin-bottom: 200px;
+} */
 .section-form {
     text-align: center;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+   
+}
+
+
+
+.form div{
+    margin-bottom: 10px;  
+    margin-top: 20px;
 }
 
 .input-textarea {
@@ -170,12 +213,16 @@ img {
     text-transform: uppercase;
     border: 1px black solid;
     border-radius: 20px;
-    background: transparent;
+    background: white;
     cursor: pointer;
+    
 }
+.submit:focus {outline:0 !important;}
 
-
-
+#email, #comments {
+    padding-left: 10px;
+    padding-top:5px;
+}
 
 
 @media (max-width: 650px) {
